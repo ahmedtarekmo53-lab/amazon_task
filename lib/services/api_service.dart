@@ -12,7 +12,7 @@ class ApiService {
       List data = jsonDecode(response.body);
       return data.map((e) => Product.fromJson(e)).toList();
     } else {
-      throw Exception("Errors");
+      throw Exception("Error");
     }
   }
 }
